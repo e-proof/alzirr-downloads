@@ -1,17 +1,20 @@
-# Alzirr 0.1.0 preview
+# Alzirr 0.1.1 preview
 
-Signed Android APK with 12 language packs and a PC web dashboard. The service supports provider BYOK, task/conversation checkpoints, file versions, phone/cloud ownership transfer, bounded child agents, permission gates, Gmail/Outlook OAuth, HTTPS/MCP/SSH connectors, schedules and subscription/credit accounting.
+Android phone mode now starts and runs without an Alzirr server or account. Provider keys remain encrypted on the phone; native HTTPS connects directly to OpenAI, Anthropic, Gemini or a compatible provider. New model responses still need internet and your own provider key; no on-device language model is bundled.
 
-This is a **preview requiring a configured HTTPS Alzirr server**, not a live hosted-service announcement. No public production endpoint, API-provider keys, mail accounts, S3 bucket or Paddle merchant configuration is included.
+Tasks, conversations, permissions, tool/model results, checkpoints, child work and Word/Excel/Markdown/text documents are kept locally. Optional server sync transfers a task family with stable action IDs and checksummed artifacts, without credentials or a model charge. Transfer and handoff intent survive lost replies; stale cloud copies cannot overwrite changed phone work. Background task snapshots are separated from the local execution ledger. Small-screen layout overflow was corrected.
 
-- Android 8+, app ID `com.alzirr.app`, version `0.1.0`, versionCode `1`.
-- APK: 478,692 bytes; APK signature scheme v2, RSA 4096-bit identity.
-- Certificate SHA-256: `d20eb4bb3253ab0571abb96ba1ac7cb94b2de9e06e1198fbecbe7c63b3a628c8`.
-- Same-key updates were exercised on Android API 36 emulator. Keep this signing identity for later updates.
-- 49 workspace tests (11 PostgreSQL integration), 3 standalone SDK tests, 6 Android unit tests passed. Android lint: 0 errors / 24 warnings.
-- TR/AR mobile and desktop browser smoke passed without browser exceptions.
-- Emulator warm sample: 2.151 seconds; real-device power and speed acceptance remains pending.
+- Android 8+, app ID com.alzirr.app, version 0.1.1, versionCode 2.
+- APK: **705,751 bytes**; APK signature scheme v2, RSA 4096-bit identity.
+- APK SHA-256: eb82c004ffbc1ddba51ce11bb4dabcade883b83991446ffc53ab1c23650ce930.
+- Certificate SHA-256 unchanged: d20eb4bb3253ab0571abb96ba1ac7cb94b2de9e06e1198fbecbe7c63b3a628c8.
+- Installed over versionCode 1 on the owned Android API 36 emulator; no uninstall needed.
+- 60 workspace tests, including 12 real PostgreSQL integration tests; 8 Android release tests and 11 skills passed. Lint: 0 errors / 25 warnings.
+- No-account mobile flow, 320 px layout, offline stored files and Arabic RTL passed.
+- Actual debug APK used native Room/Keystore to create approved Word with a model fixture; force-stop/restart retained the answer and file without replay or Alzirr network calls.
+- One real native HTTPS request with an invalid QA key returned HTTP 401. This confirms direct transport, not successful paid inference.
+- Signed APK rendered offline; crash buffer was empty. Cold emulator sample: 3.769 seconds; physical performance and battery targets remain unverified.
 
-Phone execution pauses in the background. Cloud execution can continue independently; device tools wait for the app. Automatic full-mailbox mirroring, unrestricted/private-app data access, unattended cross-app background control, native PC and iOS apps are not included. Unknown model reservations and non-runner external effects need operator reconciliation. Hosted integration and real Linux/gVisor verification remain deployment work.
+Phone execution remains foreground-driven. No public production SaaS endpoint, model keys, mail accounts, S3 or Paddle merchant configuration is included. Live provider responses, OAuth/mail, payments, hosted storage, physical-device permission/battery flows and actual Linux/gVisor need operator acceptance. Release manifest is not debuggable and its code disables WebView debugging; the userdebug emulator overrides that setting, so normal-device socket absence was not verified.
 
-The SDK archive is MIT licensed and includes JavaScript and TypeScript definitions only. Application binaries use the included preview binary license. Signing keys, user data and private core source are excluded from this public release.
+The wider product plan still lacks IMAP/SMTP/full mailbox sync, resumable large files, Go/WSS PC connector, direct Codex App Server, WebRTC voice, complete sync/cloud resource permissions and administrative prices/spend budgets. This is a corrected standalone-phone preview, not completion of the whole platform. SDK remains at 0.1.0; its source and archive are available from the existing SDK release. Signing material, private source and user data are excluded.
