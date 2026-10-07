@@ -1,2 +1,5 @@
 *.apk
 *.tgz
+*.zip
+!docs/alzirr-0.1.1-android.apk
+!docs/alzirr-0.1.1-android.zip

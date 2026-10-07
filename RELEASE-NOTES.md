@@ -1,5 +1,7 @@
 # Alzirr 0.1.1 preview
 
+[Download page](https://e-proof.github.io/alzirr-downloads/) · [APK](https://e-proof.github.io/alzirr-downloads/alzirr-0.1.1-android.apk) · [ZIP alternative](https://e-proof.github.io/alzirr-downloads/alzirr-0.1.1-android.zip). No GitHub account is required. The mirror and ZIP use the original, unchanged signed APK; ZIP includes license notices and the APK checksum. Extract the APK from ZIP before installing.
+
 Android phone mode now starts and runs without an Alzirr server or account. Provider keys remain encrypted on the phone; native HTTPS connects directly to OpenAI, Anthropic, Gemini or a compatible provider. New model responses still need internet and your own provider key; no on-device language model is bundled.
 
 Tasks, conversations, permissions, tool/model results, checkpoints, child work and Word/Excel/Markdown/text documents are kept locally. Optional server sync transfers a task family with stable action IDs and checksummed artifacts, without credentials or a model charge. Transfer and handoff intent survive lost replies; stale cloud copies cannot overwrite changed phone work. Background task snapshots are separated from the local execution ledger. Small-screen layout overflow was corrected.

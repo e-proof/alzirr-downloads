@@ -2,7 +2,9 @@
 
 A small Android personal agent with optional cloud execution. **Phone mode works without an Alzirr account or Alzirr server.**
 
-[Download the signed APK](https://github.com/e-proof/alzirr-downloads/releases/download/v0.1.1/alzirr-0.1.1-android.apk) · [Release notes](https://github.com/e-proof/alzirr-downloads/releases/tag/v0.1.1) · [Open Extension SDK](https://github.com/e-proof/alzirr-sdk)
+[Download and install](https://e-proof.github.io/alzirr-downloads/) · [Signed APK](https://e-proof.github.io/alzirr-downloads/alzirr-0.1.1-android.apk) · [ZIP alternative](https://e-proof.github.io/alzirr-downloads/alzirr-0.1.1-android.zip) · [Release notes](https://github.com/e-proof/alzirr-downloads/releases/tag/v0.1.1) · [Open Extension SDK](https://github.com/e-proof/alzirr-sdk)
+
+The download page does not need a GitHub account. If your browser blocks APK downloads, download the ZIP and extract the APK. The mirror and ZIP contain the exact signed release binary; its checksum and signing identity are unchanged. The [original GitHub release download](https://github.com/e-proof/alzirr-downloads/releases/download/v0.1.1/alzirr-0.1.1-android.apk) remains available.
 
 Android 8+. APK: **705,751 bytes** (about 0.71 MB). Languages: Türkçe, English, Deutsch, Français, Español, Português, العربية, Русский, हिन्दी, 日本語, 한국어, 中文; Arabic RTL.
 
@@ -22,7 +24,7 @@ Phone execution runs while the app is visible and pauses in the background. Opt-
 
 ## Türkçe
 
-[APK'yı indir](https://github.com/e-proof/alzirr-downloads/releases/download/v0.1.1/alzirr-0.1.1-android.apk). Açmak ve telefonda kullanmak için Alzirr hesabı veya sunucu adresi gerekmez. Bağlantılar ekranından kendi model anahtarını ekle; görevler, konuşmalar ve belgeler telefonda saklanır. Anahtar Android Keystore ile korunur, model isteği doğrudan sağlayıcıya gider.
+[İndirme sayfasını aç](https://e-proof.github.io/alzirr-downloads/) ve **APK indir** düğmesine bas. Tarayıcı indirmeyi engellerse **Alternatif ZIP indir** seçeneğini kullan, ZIP'i açıp içindeki APK'yı kur. GitHub hesabı gerekmez. Açmak ve telefonda kullanmak için Alzirr hesabı veya sunucu adresi gerekmez. Bağlantılar ekranından kendi model anahtarını ekle; görevler, konuşmalar ve belgeler telefonda saklanır. Anahtar Android Keystore ile korunur, model isteği doğrudan sağlayıcıya gider.
 
 APK içinde yerel dil modeli yoktur; yeni model yanıtı internet ve sağlayıcı anahtarı ister. Kayıtlı çalışmalar çevrimdışı açılır. Bulutla eşitleme ve ücretli sunucu kullanımı isteğe bağlıdır. Bu önizlemeye canlı genel SaaS adresi dahil değildir. Telefon yürütmesi uygulama görünürken çalışır, arka planda durur. iPhone APK çalıştırmaz; PC için web paneli vardır.
 

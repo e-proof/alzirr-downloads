@@ -1,0 +1,2 @@
+eb82c004ffbc1ddba51ce11bb4dabcade883b83991446ffc53ab1c23650ce930  alzirr-0.1.1-android.apk
+c82fcd0b4bf3ab935ac70443dbc6892731cbda0f43b552b1dcf16296d4b6027b  alzirr-0.1.1-android.zip
